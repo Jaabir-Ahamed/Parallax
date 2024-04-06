@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Reddit Mono', monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 40px;
+    color: white;
+}
+header nav {
+    display: flex;
+    gap: 30px;
+}
+header nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding:  8px 16px;
+    border-radius: 99px;
+    transform: 0.3sec;
+    color: white;
+}
+header nav a.active {
+    background: #5247b9;
+}
+
+header nav a:hover {
+    background: #5247b9;
+}
+
+header nav:hover > a:not(:hover) {
+    background: none;
+}
+
+.home {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to top, #D2E2FB, 30%, #86A8DB );
+    position: relative;
+    overflow: hidden;
+}
+
+.home img {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   pointer-events: none;
+}
+
+.home .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+.about {
+    padding: 50px;
+    background: #3b3291;
+    color: white;
+    position: relative;
+    z-index: 100;
+}
+.about h1 {
+    font-size: 40px;
+}
